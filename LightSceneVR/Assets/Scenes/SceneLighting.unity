@@ -317,6 +317,7 @@ GameObject:
   - component: {fileID: 260897027}
   - component: {fileID: 260897026}
   - component: {fileID: 260897025}
+  - component: {fileID: 260897030}
   m_Layer: 0
   m_Name: LeftHand Controller
   m_TagString: Untagged
@@ -888,6 +889,21 @@ MonoBehaviour:
     m_Reference: {fileID: 7779212132400271959, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
   m_ButtonPressPoint: 0.5
+--- !u!114 &260897030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 260897023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b12dc74c98dbf504c93ee9e5b4b805c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ourHandPrefab: {fileID: 6155618617760590996, guid: d7f2be990789b06438bc3826b40f2be0,
+    type: 3}
+  ourControllerCharacterisitcs: 320
 --- !u!1 &297178900
 GameObject:
   m_ObjectHideFlags: 0
@@ -992,6 +1008,7 @@ GameObject:
   m_Component:
   - component: {fileID: 427838367}
   - component: {fileID: 427838366}
+  - component: {fileID: 427838368}
   m_Layer: 14
   m_Name: Area Light
   m_TagString: Untagged
@@ -1076,6 +1093,26 @@ Transform:
   m_Father: {fileID: 1064704919}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 161.038, y: -11.450012, z: -7.3659973}
+--- !u!114 &427838368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 427838365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 1
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
 --- !u!1 &454285937
 GameObject:
   m_ObjectHideFlags: 0
@@ -1613,6 +1650,7 @@ GameObject:
   - component: {fileID: 770287933}
   - component: {fileID: 770287932}
   - component: {fileID: 770287931}
+  - component: {fileID: 770287936}
   m_Layer: 0
   m_Name: RightHand Controller
   m_TagString: Untagged
@@ -1653,7 +1691,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 770287929}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e988983f96fe1dd48800bcdfc82f23e9, type: 3}
   m_Name: 
@@ -2008,7 +2046,8 @@ MonoBehaviour:
   m_UpdateTrackingType: 0
   m_EnableInputTracking: 1
   m_EnableInputActions: 1
-  m_ModelPrefab: {fileID: 0}
+  m_ModelPrefab: {fileID: 3703507881278312106, guid: f1db1abfe091f5c40b60171ffa537187,
+    type: 3}
   m_ModelParent: {fileID: 0}
   m_Model: {fileID: 0}
   m_AnimateModel: 0
@@ -2184,6 +2223,21 @@ MonoBehaviour:
     m_Reference: {fileID: 875253871413052681, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
   m_ButtonPressPoint: 0.5
+--- !u!114 &770287936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 770287929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b12dc74c98dbf504c93ee9e5b4b805c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ourHandPrefab: {fileID: 3706727339073639840, guid: f1db1abfe091f5c40b60171ffa537187,
+    type: 3}
+  ourControllerCharacterisitcs: 576
 --- !u!1 &791188443
 GameObject:
   m_ObjectHideFlags: 0
