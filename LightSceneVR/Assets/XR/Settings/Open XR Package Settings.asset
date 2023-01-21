@@ -1,5 +1,47 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8249976091908841232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55a4959af032305438a04d410c6b0418, type: 3}
+  m_Name: InterceptCreateSessionFeature Android
+  m_EditorClassIdentifier: 
+  m_enabled: 0
+  nameUi: 'Sample: Intercept Create Session'
+  version: 0.0.1
+  featureIdInternal: com.unity.openxr.feature.example.intercept
+  openxrExtensionStrings: XR_test
+  company: Unity
+  priority: 0
+  required: 0
+  message: Hello from C#!
+--- !u!114 &-7310427599108490460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55a4959af032305438a04d410c6b0418, type: 3}
+  m_Name: InterceptCreateSessionFeature Standalone
+  m_EditorClassIdentifier: 
+  m_enabled: 1
+  nameUi: 'Sample: Intercept Create Session'
+  version: 0.0.1
+  featureIdInternal: com.unity.openxr.feature.example.intercept
+  openxrExtensionStrings: XR_test
+  company: Unity
+  priority: 0
+  required: 0
+  message: Hello from C#!
 --- !u!114 &-6992688909260713628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36,6 +78,7 @@ MonoBehaviour:
   - {fileID: 4963040286616351577}
   - {fileID: 4893829345954421791}
   - {fileID: 2497339995422133549}
+  - {fileID: -7310427599108490460}
   - {fileID: -5941725581135416239}
   - {fileID: 1998953448977445311}
   - {fileID: 1507748248788215057}
@@ -226,6 +269,7 @@ MonoBehaviour:
   - {fileID: 1067038788430179971}
   - {fileID: -2691030006605855605}
   - {fileID: 451524702848492467}
+  - {fileID: 8549476622837232319}
   - {fileID: 4645727771627872904}
   - {fileID: -201222513490127887}
   - {fileID: -4713059573295992451}
@@ -268,7 +312,6 @@ MonoBehaviour:
   m_Name: InterceptCreateSessionFeature Android
   m_EditorClassIdentifier: 
   m_enabled: 0
-  <failedInitialization>k__BackingField: 0
   nameUi: 'Sample: Intercept Create Session'
   version: 0.0.1
   featureIdInternal: com.unity.openxr.feature.example.intercept
@@ -277,7 +320,6 @@ MonoBehaviour:
   priority: 0
   required: 0
   message: Hello from C#!
-  <receivedMessage>k__BackingField: 
 --- !u!114 &-1553104604576767885
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -313,6 +355,7 @@ MonoBehaviour:
   features:
   - {fileID: 5194282656296189620}
   - {fileID: 4882949546421140102}
+  - {fileID: -8249976091908841232}
   - {fileID: -1553104604576767885}
   - {fileID: 7945676982447982409}
   - {fileID: -6992688909260713628}
@@ -432,7 +475,6 @@ MonoBehaviour:
   m_Name: InterceptCreateSessionFeature WSA
   m_EditorClassIdentifier: 
   m_enabled: 0
-  <failedInitialization>k__BackingField: 0
   nameUi: 'Sample: Intercept Create Session'
   version: 0.0.1
   featureIdInternal: com.unity.openxr.feature.example.intercept
@@ -441,7 +483,6 @@ MonoBehaviour:
   priority: 0
   required: 0
   message: Hello from C#!
-  <receivedMessage>k__BackingField: 
 --- !u!114 &1507748248788215057
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -700,7 +741,6 @@ MonoBehaviour:
   m_Name: InterceptCreateSessionFeature Standalone
   m_EditorClassIdentifier: 
   m_enabled: 1
-  <failedInitialization>k__BackingField: 0
   nameUi: 'Sample: Intercept Create Session'
   version: 0.0.1
   featureIdInternal: com.unity.openxr.feature.example.intercept
@@ -709,7 +749,6 @@ MonoBehaviour:
   priority: 0
   required: 0
   message: Hello from C#!
-  <receivedMessage>k__BackingField: 
 --- !u!114 &5194282656296189620
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -791,3 +830,24 @@ MonoBehaviour:
   company: Unity
   priority: 0
   required: 0
+--- !u!114 &8549476622837232319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55a4959af032305438a04d410c6b0418, type: 3}
+  m_Name: InterceptCreateSessionFeature WSA
+  m_EditorClassIdentifier: 
+  m_enabled: 0
+  nameUi: 'Sample: Intercept Create Session'
+  version: 0.0.1
+  featureIdInternal: com.unity.openxr.feature.example.intercept
+  openxrExtensionStrings: XR_test
+  company: Unity
+  priority: 0
+  required: 0
+  message: Hello from C#!
