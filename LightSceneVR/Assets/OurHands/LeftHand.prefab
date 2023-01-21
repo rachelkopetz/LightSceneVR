@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1732268206786806, guid: c6a74181d4000004887343fb87b3c53a, type: 3}
       propertyPath: m_Name
-      value: OVRCustomHandPrefab_L Variant
+      value: LeftHand
       objectReference: {fileID: 0}
     - target: {fileID: 4927695388962516, guid: c6a74181d4000004887343fb87b3c53a, type: 3}
       propertyPath: m_RootOrder
@@ -79,7 +79,7 @@ Animator:
   m_GameObject: {fileID: 1322055955186881975}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: efce6e953c3d64d46bea35b4757ed2fb, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
