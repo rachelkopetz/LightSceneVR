@@ -21,7 +21,7 @@ public class PourCoffee : MonoBehaviour
         potMidHeight = coffeePot.position.y;
         potTopHeight = coffeeLid.position.y;
 
-        if ((potMidHeight - potTopHeight) > 0)
+        if ((potTopHeight - potMidHeight) > 0)
         {
             pourCheck = true;
         }
