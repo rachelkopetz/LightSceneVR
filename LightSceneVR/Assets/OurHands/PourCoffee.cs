@@ -21,7 +21,7 @@ public class PourCoffee : MonoBehaviour
         potMidHeight = coffeePot.position.y;
         potTopHeight = coffeeLid.position.y;
 
-        if ((potTopHeight-potMidHeight) > 0)
+        if ((potMidHeight - potTopHeight) > 0)
         {
             pourCheck = true;
         }
@@ -34,7 +34,7 @@ public class PourCoffee : MonoBehaviour
         {
             isPouring = pourCheck;
 
-            if(isPouring)
+            if (isPouring)
             {
                 StartPour();
             }
@@ -43,15 +43,19 @@ public class PourCoffee : MonoBehaviour
                 EndPour();
             }
         }
-    }
 
+
+    }
     private void StartPour()
     {
         coffeeStream.SetActive(true);
     }
-
     private void EndPour()
     {
         coffeeStream.SetActive(false);
     }
 }
+
+
+
+         
