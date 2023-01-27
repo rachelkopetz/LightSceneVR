@@ -46,7 +46,7 @@ GameObject:
   - component: {fileID: 2035995757}
   - component: {fileID: 2035995755}
   - component: {fileID: 2035995756}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Apple_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
