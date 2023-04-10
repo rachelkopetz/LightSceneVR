@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 18acd6dcbdb8a104b97513df96e311f4
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - dancefloorPrefab: {fileID: 25614464144155944, guid: 7c9afd71c7f768d469fc62b6a3f17d4e,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
