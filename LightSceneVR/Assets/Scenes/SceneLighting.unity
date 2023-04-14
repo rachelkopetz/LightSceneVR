@@ -2112,84 +2112,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6046a64e832cdad44ac9e18fe66d19f1, type: 3}
---- !u!21 &402159026
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: SingleLine-LightSaber(Clone)
-  m_Shader: {fileID: 4800000, guid: 2d9a4ca4b2730b64e8aade7030f8caeb, type: 3}
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _BumpMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _DetailAlbedoMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _DetailMask:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _DetailNormalMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _EmissionMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MainTex:
-        m_Texture: {fileID: 10300, guid: 0000000000000000f000000000000000, type: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MetallicGlossMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _OcclusionMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _ParallaxMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _BumpScale: 1
-    - _Cutoff: 0.5
-    - _DetailNormalMapScale: 1
-    - _DstBlend: 0
-    - _Glossiness: 0.5
-    - _LightSaberFactor: 0.8
-    - _LineScale: 0.01533182
-    - _LineWidth: 20
-    - _Metallic: 0
-    - _Mode: 0
-    - _OcclusionStrength: 1
-    - _Parallax: 0.02
-    - _SrcBlend: 1
-    - _UVSec: 0
-    - _UvBasedLightSaberFactor: 0
-    - _ZWrite: 1
-    m_Colors:
-    - _Color: {r: 0.9811321, g: 0, b: 1, a: 1}
-    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-  m_BuildTextureStacks: []
 --- !u!1 &408800239
 GameObject:
   m_ObjectHideFlags: 0
@@ -3891,6 +3813,45 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 877884606}
   m_CullTransparentMesh: 1
+--- !u!1 &880587114 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7112549032870248288, guid: 3f67092e035435e41988ec4623df82ea,
+    type: 3}
+  m_PrefabInstance: {fileID: 2506018520054362379}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &880587119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 880587114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 065369bb1b2c5bf4995ebfce168e66cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LightSaberAnimator: {fileID: 880587120}
+--- !u!95 &880587120
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 880587114}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 00decf805097207409629d45999e4e2b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &887452788
 GameObject:
   m_ObjectHideFlags: 0
@@ -4380,7 +4341,6 @@ Transform:
   - {fileID: 1664496205}
   - {fileID: 11501694}
   - {fileID: 427838367}
-  - {fileID: 1201339985}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4668,93 +4628,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2035995752}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1201339984
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1064704919}
-    m_Modifications:
-    - target: {fileID: 1071947270, guid: 3f67092e035435e41988ec4623df82ea, type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 1565330239}
-    - target: {fileID: 1072855266, guid: 3f67092e035435e41988ec4623df82ea, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 402159026}
-    - target: {fileID: 1201339987, guid: 3f67092e035435e41988ec4623df82ea, type: 3}
-      propertyPath: m_InteractionManager
-      value: 
-      objectReference: {fileID: 1490837496}
-    - target: {fileID: 2489799398597990737, guid: 3f67092e035435e41988ec4623df82ea,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 2489799398597990737, guid: 3f67092e035435e41988ec4623df82ea,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 47.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 2489799398597990737, guid: 3f67092e035435e41988ec4623df82ea,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2489799398597990737, guid: 3f67092e035435e41988ec4623df82ea,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.14
-      objectReference: {fileID: 0}
-    - target: {fileID: 2489799398597990737, guid: 3f67092e035435e41988ec4623df82ea,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.5025419
-      objectReference: {fileID: 0}
-    - target: {fileID: 2489799398597990737, guid: 3f67092e035435e41988ec4623df82ea,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.5099589
-      objectReference: {fileID: 0}
-    - target: {fileID: 2489799398597990737, guid: 3f67092e035435e41988ec4623df82ea,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.49725944
-      objectReference: {fileID: 0}
-    - target: {fileID: 2489799398597990737, guid: 3f67092e035435e41988ec4623df82ea,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.4900271
-      objectReference: {fileID: 0}
-    - target: {fileID: 2489799398597990737, guid: 3f67092e035435e41988ec4623df82ea,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 1.445
-      objectReference: {fileID: 0}
-    - target: {fileID: 2489799398597990737, guid: 3f67092e035435e41988ec4623df82ea,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -90.84
-      objectReference: {fileID: 0}
-    - target: {fileID: 2489799398597990737, guid: 3f67092e035435e41988ec4623df82ea,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -90.021
-      objectReference: {fileID: 0}
-    - target: {fileID: 8911471204423492634, guid: 3f67092e035435e41988ec4623df82ea,
-        type: 3}
-      propertyPath: m_Name
-      value: LightSaber
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 3f67092e035435e41988ec4623df82ea, type: 3}
---- !u!4 &1201339985 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2489799398597990737, guid: 3f67092e035435e41988ec4623df82ea,
-    type: 3}
-  m_PrefabInstance: {fileID: 1201339984}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1257946725
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4868,7 +4741,7 @@ GameObject:
   - component: {fileID: 1337714975}
   - component: {fileID: 1337714978}
   - component: {fileID: 1337714980}
-  - component: {fileID: 1337714979}
+  - component: {fileID: 1337714981}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -5064,23 +4937,6 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
---- !u!114 &1337714979
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1337714973}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IsGlobal: 1
-  priority: 0
-  blendDistance: 0
-  weight: 1
-  sharedProfile: {fileID: 11400000, guid: 7d606c7f353779e4f89625e8bf938dc8, type: 2}
 --- !u!114 &1337714980
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5159,6 +5015,23 @@ MonoBehaviour:
   m_PlayHapticsOnHoverCanceled: 0
   m_HapticHoverCancelIntensity: 0
   m_HapticHoverCancelDuration: 0
+--- !u!114 &1337714981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1337714973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IsGlobal: 1
+  priority: 0
+  blendDistance: 0
+  weight: 1
+  sharedProfile: {fileID: 11400000, guid: 47f251744e646004a82d66c012a04758, type: 2}
 --- !u!1 &1390612041
 GameObject:
   m_ObjectHideFlags: 0
@@ -5456,7 +5329,84 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!43 &1565330239
+--- !u!21 &1541384361
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: SingleLine-TextureAdditive(Clone)
+  m_Shader: {fileID: 4800000, guid: c7536b6df21e0894ca085bed81021836, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 10300, guid: 0000000000000000f000000000000000, type: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _BumpScale: 1
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
+    - _DstBlend: 0
+    - _Glossiness: 0.5
+    - _LightSaberFactor: 0.8
+    - _LineScale: 0.0076010665
+    - _LineWidth: 20
+    - _Metallic: 0
+    - _Mode: 0
+    - _OcclusionStrength: 1
+    - _Parallax: 0.02
+    - _SrcBlend: 1
+    - _UVSec: 0
+    - _ZWrite: 1
+    m_Colors:
+    - _Color: {r: 0.9245283, g: 0.07413671, b: 0.76515573, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+  m_BuildTextureStacks: []
+--- !u!43 &1589976591
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5607,8 +5557,8 @@ Mesh:
       m_BitSize: 0
     m_UVInfo: 0
   m_LocalAABB:
-    m_Center: {x: 0, y: 50.000004, z: 0}
-    m_Extent: {x: 0.15331821, y: 50.15332, z: 0.15331821}
+    m_Center: {x: 0, y: 50, z: 0}
+    m_Extent: {x: 0.07601067, y: 50.07601, z: 0.07601067}
   m_MeshUsageFlags: 0
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
@@ -6991,6 +6941,190 @@ Transform:
   m_Father: {fileID: 770287930}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &2506018520054362379
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1340972644772729423, guid: 3f67092e035435e41988ec4623df82ea,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 1340972644772729423, guid: 3f67092e035435e41988ec4623df82ea,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 13.952
+      objectReference: {fileID: 0}
+    - target: {fileID: 1340972644772729423, guid: 3f67092e035435e41988ec4623df82ea,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.308
+      objectReference: {fileID: 0}
+    - target: {fileID: 1340972644772729423, guid: 3f67092e035435e41988ec4623df82ea,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.146
+      objectReference: {fileID: 0}
+    - target: {fileID: 1340972644772729423, guid: 3f67092e035435e41988ec4623df82ea,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6998337
+      objectReference: {fileID: 0}
+    - target: {fileID: 1340972644772729423, guid: 3f67092e035435e41988ec4623df82ea,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.7143058
+      objectReference: {fileID: 0}
+    - target: {fileID: 1340972644772729423, guid: 3f67092e035435e41988ec4623df82ea,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1340972644772729423, guid: 3f67092e035435e41988ec4623df82ea,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1340972644772729423, guid: 3f67092e035435e41988ec4623df82ea,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 91.173004
+      objectReference: {fileID: 0}
+    - target: {fileID: 1340972644772729423, guid: 3f67092e035435e41988ec4623df82ea,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1340972644772729423, guid: 3f67092e035435e41988ec4623df82ea,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4114639724964637447, guid: 3f67092e035435e41988ec4623df82ea,
+        type: 3}
+      propertyPath: m_InteractionManager
+      value: 
+      objectReference: {fileID: 1490837496}
+    - target: {fileID: 4114639724964637447, guid: 3f67092e035435e41988ec4623df82ea,
+        type: 3}
+      propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4114639724964637447, guid: 3f67092e035435e41988ec4623df82ea,
+        type: 3}
+      propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4114639724964637447, guid: 3f67092e035435e41988ec4623df82ea,
+        type: 3}
+      propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 880587119}
+    - target: {fileID: 4114639724964637447, guid: 3f67092e035435e41988ec4623df82ea,
+        type: 3}
+      propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4114639724964637447, guid: 3f67092e035435e41988ec4623df82ea,
+        type: 3}
+      propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: TurnOnLightSaber
+      objectReference: {fileID: 0}
+    - target: {fileID: 4114639724964637447, guid: 3f67092e035435e41988ec4623df82ea,
+        type: 3}
+      propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LightSaber, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4114639724964637447, guid: 3f67092e035435e41988ec4623df82ea,
+        type: 3}
+      propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5036270501681685294, guid: 3f67092e035435e41988ec4623df82ea,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 1589976591}
+    - target: {fileID: 5036270501682808266, guid: 3f67092e035435e41988ec4623df82ea,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 1541384361}
+    - target: {fileID: 5036270501684596186, guid: 3f67092e035435e41988ec4623df82ea,
+        type: 3}
+      propertyPath: m_Name
+      value: LightSaber Energy
+      objectReference: {fileID: 0}
+    - target: {fileID: 5036270501684596186, guid: 3f67092e035435e41988ec4623df82ea,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5036270501685048730, guid: 3f67092e035435e41988ec4623df82ea,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.8299639
+      objectReference: {fileID: 0}
+    - target: {fileID: 5036270501685048730, guid: 3f67092e035435e41988ec4623df82ea,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.829964
+      objectReference: {fileID: 0}
+    - target: {fileID: 5036270501685048730, guid: 3f67092e035435e41988ec4623df82ea,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.201164
+      objectReference: {fileID: 0}
+    - target: {fileID: 5036270501685048730, guid: 3f67092e035435e41988ec4623df82ea,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 22.379135
+      objectReference: {fileID: 0}
+    - target: {fileID: 5036270501685048730, guid: 3f67092e035435e41988ec4623df82ea,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.4690193
+      objectReference: {fileID: 0}
+    - target: {fileID: 5036270501685048730, guid: 3f67092e035435e41988ec4623df82ea,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.99997073
+      objectReference: {fileID: 0}
+    - target: {fileID: 5036270501685048730, guid: 3f67092e035435e41988ec4623df82ea,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.0076503754
+      objectReference: {fileID: 0}
+    - target: {fileID: 5036270501685048730, guid: 3f67092e035435e41988ec4623df82ea,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5036270501685048730, guid: 3f67092e035435e41988ec4623df82ea,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5036270501685048730, guid: 3f67092e035435e41988ec4623df82ea,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 90.29599
+      objectReference: {fileID: 0}
+    - target: {fileID: 5036270501685048730, guid: 3f67092e035435e41988ec4623df82ea,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7112549032870248288, guid: 3f67092e035435e41988ec4623df82ea,
+        type: 3}
+      propertyPath: m_Name
+      value: LightSaber Handle
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3f67092e035435e41988ec4623df82ea, type: 3}
 --- !u!1001 &2964669294495880359
 PrefabInstance:
   m_ObjectHideFlags: 0
