@@ -223,8 +223,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5011444607773073919}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.1814, y: -1.005, z: 0.00031054}
+  m_LocalScale: {x: 1.1262758, y: 1.1262758, z: 1.1262758}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1331968236515150920}
@@ -275,6 +275,8 @@ GameObject:
   - component: {fileID: 1406634281265522660}
   - component: {fileID: 3743832838426161990}
   - component: {fileID: 4114639724964637447}
+  - component: {fileID: 880587120}
+  - component: {fileID: 880587125}
   m_Layer: 0
   m_Name: Imported
   m_TagString: Untagged
@@ -375,10 +377,34 @@ MonoBehaviour:
       m_Calls: []
   m_Activated:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 880587125}
+        m_TargetAssemblyTypeName: LightSaber, Assembly-CSharp
+        m_MethodName: TurnOnLightSaber
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_Deactivated:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 880587125}
+        m_TargetAssemblyTypeName: LightSaber, Assembly-CSharp
+        m_MethodName: TurnLightSaberOff
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_OnFirstHoverEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -443,6 +469,39 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_AttachPointCompatibilityMode: 0
+--- !u!95 &880587120
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7112549032870248288}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 95a52cc8ab7f81142ae48baa62213d5e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &880587125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7112549032870248288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 065369bb1b2c5bf4995ebfce168e66cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LightSaberAnimator: {fileID: 880587120}
 --- !u!1 &8131415790105777129
 GameObject:
   m_ObjectHideFlags: 0
@@ -484,7 +543,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 122648, guid: 66e0018a9e63c4348b7a340890e5b30c, type: 3}
       propertyPath: m_Name
-      value: SingleLine-TextureAdditive
+      value: LightSaber Energy
       objectReference: {fileID: 0}
     - target: {fileID: 436056, guid: 66e0018a9e63c4348b7a340890e5b30c, type: 3}
       propertyPath: m_RootOrder
@@ -504,7 +563,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 436056, guid: 66e0018a9e63c4348b7a340890e5b30c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.2011642
+      value: 1.201164
       objectReference: {fileID: 0}
     - target: {fileID: 436056, guid: 66e0018a9e63c4348b7a340890e5b30c, type: 3}
       propertyPath: m_LocalPosition.y
@@ -556,11 +615,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11475718, guid: 66e0018a9e63c4348b7a340890e5b30c, type: 3}
       propertyPath: m_lineColor.g
-      value: 0.07413671
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11475718, guid: 66e0018a9e63c4348b7a340890e5b30c, type: 3}
       propertyPath: m_lineColor.r
-      value: 0.9245283
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11475718, guid: 66e0018a9e63c4348b7a340890e5b30c, type: 3}
+      propertyPath: m_lightSaberFactor
+      value: 0.81
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66e0018a9e63c4348b7a340890e5b30c, type: 3}
