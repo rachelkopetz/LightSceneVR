@@ -1,0 +1,11 @@
+Model Information:
+* title:	Side Table w/ Drawer
+* source:	https://sketchfab.com/3d-models/side-table-w-drawer-5d6a7ab913e446e399de7e5ad9417e83
+* author:	Justin.Foley (https://sketchfab.com/Justin.Foley)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Side Table w/ Drawer" (https://sketchfab.com/3d-models/side-table-w-drawer-5d6a7ab913e446e399de7e5ad9417e83) by Justin.Foley (https://sketchfab.com/Justin.Foley) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
